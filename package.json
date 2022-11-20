@@ -1,0 +1,16 @@
+{
+  "name": "assignment-2-bootstrap",
+  "version": "1.0.0",
+  "description": "bootatrap task",
+  "main": "index.html",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.2",
+    "lite-server": "^2.6.1"
+  }
+}

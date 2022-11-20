@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Assignment</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Milish Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="row container-fluid bodyMain m-0 p-0">
+      <!-- Side nav -->
+      <nav
+        class="col-xl-2 col-md-3 col-lg-3 navbar-expand-md bg-dark navbar-dark"
+      >
+        <div class="navbar">
+          <div class="container-fluid p-0 m-0">
+            <a
+              href="#"
+              class="navbar-brand d-flex align-items-center gap-3 py-4"
+            >
+              <span
+                ><img src="/Assets/Images and Icons/logo.svg" alt=""
+              /></span>
+              <span>Dashboard Kit</span>
+            </a>
+
+            <button
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+              class="navbar-toggler"
+              aria-controls="navbar"
+              aria-expanded="false"
+              aria-label="Toggle Navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse flex-column" id="navbar">
+            <ul class="navbar-nav flex-column py-3 firstNav">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img src="/Assets/Images and Icons/overview.svg" alt=""
+                  /></span>
+                  <span>Overview</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/tickets.html" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img src="/Assets/Images and Icons/tickets.svg" alt=""
+                  /></span>
+                  <span>Tickets</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img src="/Assets/Images and Icons/idea.svg" alt=""
+                  /></span>
+                  <span>Ideas</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img src="/Assets/Images and Icons/contacts.svg" alt=""
+                  /></span>
+                  <span>Contacts</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img src="/Assets/Images and Icons/agent.svg" alt=""
+                  /></span>
+                  <span>Agents</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img src="/Assets/Images and Icons/articles.svg" alt=""
+                  /></span>
+                  <span>Articles</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-column py-2 secondNav secondNav">
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img src="/Assets/Images and Icons/settings.svg" alt=""
+                  /></span>
+                  <span>Settings</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex gap-3 py-3">
+                  <span
+                    ><img
+                      src="/Assets/Images and Icons/subscription.svg"
+                      alt=""
+                  /></span>
+                  <span>Subscription</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="col-xl-10 col-md-9 col-lg-9 px-3 mainContainer">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand py-4 bodyNavHeader"> Tickets </a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-auto gap-4 align-items-center">
+                <li class="nav-item">
+                  <a href="3">
+                    <img
+                      src="/Assets/Images and Icons/search.svg"
+                      alt="Search"
+                    />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#0" class="nav-link">
+                    <img
+                      src="/Assets/Images and Icons/new notofication.svg"
+                      alt="Notification"
+                    />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#0" class="nav-link user"> Jones Ferdinand </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#0" class="nav-link">
+                    <img src="/Assets/Images and Icons/user.svg" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Table Section -->
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex container-fluid gap-4 ticktetOptions py-3">
+              <div class="text-dark">All tickets</div>
+              <div class="d-flex align-items-center ms-auto gap-1">
+                <i class="bi bi-sort-up"></i>
+                <span>Sort</span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <i class="bi bi-funnel-fill"></i>
+                <span>Sort</span>
+              </div>
+            </div>
+            <div class="table-responsive-xl w-100">
+              <table
+                class="table table-hover"
+                style="overflow-x: auto"
+                id="table"
+                ;
+              >
+                <thead>
+                  <tr>
+                    <th scope="col" class="py-2">Ticket details</th>
+                    <th scope="col" class="py-2">Customer name</th>
+                    <th scope="col" class="py-2">Date</th>
+                    <th scope="col" class="py-2">Priority</th>
+                    <th scope="col" class="py-2"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Row 1 -->
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Ticket details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/tomCruise.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>Contact Email not Linked</span>
+                        <span>Updated 1 day ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer name">
+                      <div class="text-dark">Tom Cruise</div>
+                      <div>on 24.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Date">
+                      <div class="text-dark">May 26, 2019</div>
+                      <div>6:30 PM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-danger px-1 py-1 rounded text-light text-center w-50"
+                      >
+                        HIGH
+                      </div>
+                    </td>
+                    <td class="py-4">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+
+                  <!-- Row 2 -->
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Ticket details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/mattDamon.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>Adding Images to Featured Posts</span>
+                        <span>Updated 1 day ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer name">
+                      <div class="text-dark">Matt Damon</div>
+                      <div>on 24.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Time">
+                      <div class="text-dark">May 26, 2019</div>
+                      <div>8:00 AM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-warning px-1 py-1 rounded text-light text-center w-50"
+                      >
+                        LOW
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Options">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+
+                  <!-- Row 3 -->
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Ticket details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/robertDowney.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>When will I be charged this month?</span>
+                        <span>Updated 1 day ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer name">
+                      <div class="text-dark">Robert Downey</div>
+                      <div>on 24.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Time">
+                      <div class="text-dark">May 26, 2019</div>
+                      <div>7:30 PM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-danger px-1 py-1 rounded text-light text-center w-50"
+                      >
+                        HIGH
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Options">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+
+                  <!-- Row 4 -->
+
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Ticket details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/christainBale.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>Payment not going through</span>
+                        <span>Updated 2 days ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer name">
+                      <div class="text-dark">Christian Bale</div>
+                      <div>on 24.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Time">
+                      <div class="text-dark">May 25, 2019</div>
+                      <div>7:30 PM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-success px-1 py-1 rounded text-light text-center w-75"
+                      >
+                        NORMAL
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Options">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+
+                  <!-- Row 5 -->
+
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Ticket Details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/henryCavil.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>Unable to add replies</span>
+                        <span>Updated 2 days ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer name">
+                      <div class="text-dark">Henry Cavil</div>
+                      <div>on 24.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Time">
+                      <div class="text-dark">May 25, 2019</div>
+                      <div>4:30 PM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-danger px-1 py-1 rounded text-light text-center w-50"
+                      >
+                        HIGH
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Options">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+
+                  <!-- Row 6 -->
+
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Ticket details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/chrisEvans.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>Downtime since last week</span>
+                        <span>Updated 3 days ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer name">
+                      <div class="text-dark">Chris Evans</div>
+                      <div>on 23.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Time">
+                      <div class="text-dark">May 25, 2019</div>
+                      <div>2:00 PM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-success px-1 py-1 rounded text-light text-center w-75"
+                      >
+                        NORMAL
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Oprions">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+
+                  <!-- Row 7 -->
+
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Ticket details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/samSmith.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>Referral Bonus</span>
+                        <span>Updated 4 days ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer name">
+                      <div class="text-dark">Sam Smith</div>
+                      <div>on 22.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Time">
+                      <div class="text-dark">May 25, 2019</div>
+                      <div>11:30 AM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-warning px-1 py-1 rounded text-light text-center w-50"
+                      >
+                        LOW
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Options">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+
+                  <!-- Row 8 -->
+
+                  <tr>
+                    <td
+                      scope="row "
+                      class="d-flex align-items-center gap-3 py-4"
+                      data-title="Tickt details"
+                    >
+                      <div>
+                        <img
+                          src="/Assets/Images and Icons/samSmith.svg"
+                          alt="Tom Cruise"
+                          style="border-radius: 50%"
+                        />
+                      </div>
+                      <div>
+                        <span>How do I change my password?</span>
+                        <span>Updated 6 days ago</span>
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Customer details">
+                      <div class="text-dark">Steve Rogers</div>
+                      <div>on 21.05.2019</div>
+                    </td>
+                    <td class="py-4" data-title="Time">
+                      <div class="text-dark">May 24, 2019</div>
+                      <div>1:00 PM</div>
+                    </td>
+                    <td class="py-4" data-title="Priority">
+                      <div
+                        class="bg-success px-1 py-1 rounded text-light text-center w-75"
+                      >
+                        NORMAL
+                      </div>
+                    </td>
+                    <td class="py-4" data-title="Options">
+                      <i
+                        class="bi bi-three-dots-vertical"
+                        style="color: #c5c7cd"
+                      ></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Pagination Section -->
+            <div class="container-fluid d-flex gap-4 pagination py-3">
+              <div class="ms-auto">
+                Rows per page: 8 <i class="bi bi-caret-down-fill"></i>
+              </div>
+              <div class="ms-3">1-8 of 1240</div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-caret-left"></i>
+                <i class="bi bi-caret-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+      </div>
+    </div>
+  </body>
+</html>
